@@ -101,8 +101,8 @@ public class ChatController {
     public void hello(@RequestParam String user, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
         let input = validator.escape("<h1>Hello: " + user + "</h1>");
-        response.getWriter().write(input);
-        response.getWriter().flush();
+        //response.getWriter().write(input);
+        //response.getWriter().flush();
     }
 
     public void handleUserDisconnection(String userName) {
